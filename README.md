@@ -1,6 +1,8 @@
 # ConferenceSite
 A Responsive Conference site made with html css and javascript
 
+Demo: https://conferencesite.netlify.app/
+
 includes:
 
 1. Home Page

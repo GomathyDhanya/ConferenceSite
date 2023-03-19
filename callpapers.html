@@ -1,0 +1,578 @@
+
+
+
+
+
+<html>
+<head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48
+
+        }
+        </style>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .page{
+            
+            width:100vw;
+            display:flex;
+            height: 100vh;
+
+            
+        }
+
+        nav{
+            width:100vw;
+            height:10vh;
+            position: sticky;
+            top:0;
+            background-color: #242a36;
+
+            display:flex;
+            justify-content: space-between;
+            padding:0 0 0 2% ;
+            box-sizing: border-box;
+            align-items: center;
+            flex-direction: row;
+
+            z-index: 2;
+            
+        }
+
+        .burger{
+            display: none;
+        }
+
+        .navlinks{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .innerlinks{
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+        }
+        .innerlinks a{
+            
+            text-decoration: none;
+            color: white;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            padding: 0 30px 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .innerlinks a:hover{
+            background-color: #6de9e9;
+            color:#242a36;
+        }
+
+        .logo{
+            width:100%;
+            display: flex;
+            align-items: center;
+
+        }
+
+        footer{
+            width:100vw;
+            height:10vh;
+            background-color: #242a36;
+            margin: 0;
+            display: flex;
+            align-items: center;
+
+            padding-left:3%;
+            box-sizing: border-box;
+            
+
+        }
+
+        .hero{
+            background-image: url("headerimg.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+            
+        }
+
+        .name{
+            font-size: 7vw;
+            color: white;
+            font-family: 'Bebas Neue', cursive;
+
+        }
+
+        .first{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 100%;
+            padding: 10% 0 10% 0;
+            
+            
+        }
+
+
+
+        .firstcontent{
+            width:70%;
+            height:80%;
+            justify-content: center;
+            display:flex;
+            flex-direction: column;
+            
+            
+        }
+
+        .card{
+            width:300px;
+            height: 300px;
+            background-color: #6de9e9;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .innercard{
+            width: 90%;
+            height: 90%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .photo{
+            width: 100%;
+            height: 85%;
+            background-image: url("d1.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .namephoto{
+            width: 100%;
+            height: 15%;
+
+            display: flex;
+          
+            justify-content: center;
+            align-items: center;
+        }
+
+        .paras{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        
+ 
+
+        .second{
+
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            background-color: #6de9e9;
+            padding: 10% 0 10% 0;
+
+        }
+
+        .secondcontent{
+            width:70%;
+            height:80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+
+        .halves{
+            
+           
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;   
+            
+            gap:10px;
+            
+
+            
+        }
+
+        .conimg{
+            width:100%;
+            height: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .cimg{
+            width: 90%;
+            height: 90%;
+            background-image: url("conference.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        
+        .conconten{
+           
+            width:100%;
+            height:100%;
+            display: flex;
+            
+            
+        }
+
+
+        .contlis{
+
+            width: 100%;
+            height:100%;
+            
+            justify-self: center;
+            align-self: center;
+
+            display: flex;
+            flex-flow: column;
+
+            gap:10px;
+            padding: 0;
+            list-style-type: none;
+
+            
+            
+        } 
+
+        .contlis li{
+            background-color: #242a36;
+            padding: 5%;
+            justify-self: center;
+            color: #6de9e9;
+            text-align: justify;
+            
+        }
+
+        .domaincontent p{
+            border-style: ridge;
+            border-color: #6de9e9;
+            padding: 15px;
+            color: #242a36;
+            text-align: justify;
+        }
+
+        
+
+        
+
+        @media screen and (max-width:1000px){
+
+            
+            
+            .halves{
+            
+                justify-self: center;
+                align-self: center;
+                display: block;
+                width: 100%;
+                
+
+               
+        }
+
+        .conimg{
+            width:100%;
+            height: 500px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .conconten{
+           
+            width:100%;
+            display: block;
+            
+            
+        }
+
+        .cimg{
+            width: 90%;
+            height: 90%;
+            background-image: url("conference.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+            
+            .page{
+                height: auto;
+                padding: 10% 0 10% 0;
+            }
+
+            .second{
+                padding:10% 0 10% 0;
+            }
+
+            .burger{
+            display: block;
+            color: white;
+            z-index: 3;
+            padding-right: 30px;
+        }
+
+    
+
+        .navlinks{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            width: auto;
+            
+        }
+
+        .innerlinks{
+            display: none;
+            position: absolute;
+            width: 50vw;
+            top:10vh;
+            right: 0;
+            background-color: #242a36;
+            
+        }
+
+        .innerlinks a{
+            color: white;
+            text-decoration: none;
+            display: flex;
+            background-color: #242a36
+            
+
+        }
+
+        .innerlinks a:hover{
+            background-color: #6de9e9;
+            color: #242a36;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navlinks:hover .innerlinks{
+            display: block;
+            background-color: #242a36;
+            
+        }
+
+            
+
+
+    
+        }
+
+
+
+
+        
+
+
+
+        
+       
+     
+
+
+    </style>
+
+</head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" title="HOPCON logo">
+            </div>
+            
+            <div class="navlinks">
+                <span class="material-symbols-outlined burger">menu</span>
+                <div class="innerlinks">
+                    <a href="ex1.html" title="link to home">Home</a>
+                    <a href="comittee.html" title="link to committee">Committee</a>
+                    <a href="callpapers.html" title="link to papers">Papers</a>
+                    <a href="dates.html" title="links to dates">Dates</a>
+                    <a href="workshops.html" title="links to workshops">Workshops</a>
+                    <a href="register.html" title="link to register">Register</a>
+                    <a href="contact.html" title="link to contact">Contact</a>
+                    <a href="gallery.html" title="link to gallery">gallery</a>
+                </div>
+            </div>
+
+        </nav>
+        <div class="page hero">
+
+            
+            <h1 class="name"><b>
+                HOP CON <span style="color:#6de9e9">2023</span>
+            </b></h1>
+           
+            
+        </div>
+            
+
+        
+        <div class="page first">
+
+            <div class="firstcontent">
+                <h1 style="color:#242a36;">Call for papers</h1>
+                <div style="height:3px; background-color:#6de9e9;width: 100%;"></div>
+                
+                <h2 style="color: #6de9e9;">Guidelines</h2>
+                <p style="text-align: justify;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id nibh tortor id aliquet lectus proin nibh nisl condimentum. In ornare quam viverra orci sagittis eu volutpat. Ac orci phasellus egestas tellus rutrum. Odio tempor orci dapibus ultrices in iaculis nunc sed augue.
+                </p>
+
+                <p style="text-align: justify;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id nibh tortor id aliquet lectus proin nibh nisl condimentum. In ornare quam viverra orci sagittis eu volutpat. Ac orci phasellus egestas tellus rutrum. Odio tempor orci dapibus ultrices in iaculis nunc sed augue.
+                </p>
+                <div style="height:3px; background-color:#6de9e9;width: 100%;"></div>
+                
+                <h2 style="color: #6de9e9;">Domains</h2>
+                <div class="domaincontent">
+                    <details>
+                        <summary>Artificial Intelligence</summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi vitae suscipit tellus mauris. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis.</p>
+                    </details>
+
+                    <details>
+                        <summary>Internet of Things</summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi vitae suscipit tellus mauris. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis.</p>
+                    </details>
+                    <details>
+                        <summary>Web Development</summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi vitae suscipit tellus mauris. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis.</p>
+                    </details>
+                    <details>
+                        <summary>Computer Networking</summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi vitae suscipit tellus mauris. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis.</p>
+                    </details>
+                    <details>
+                        <summary>Mathematics</summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi vitae suscipit tellus mauris. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis.</p>
+                    </details>
+                    <details>
+                        <summary>Biomedical Engineering</summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi vitae suscipit tellus mauris. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis.</p>
+                    </details>
+                    <details>
+                        <summary>Physics</summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi vitae suscipit tellus mauris. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis.</p>
+                    </details>
+                    <details>
+                        <summary>Chemistry</summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi vitae suscipit tellus mauris. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis.</p>
+                    </details>
+                </div>
+                <div style="height:3px; background-color:#6de9e9;width: 100%;margin-top: 20px;"></div>
+                <h2 style="color: #6de9e9;">Submission Format</h2>
+                <p style="text-align: justify;">
+                    Iaculis at erat pellentesque adipiscing commodo elit at. Aliquam etiam erat velit scelerisque in dictum non. Quam elementum pulvinar etiam non quam lacus suspendisse. Purus in massa tempor nec feugiat. Viverra maecenas accumsan lacus vel facilisis volutpat est. Id velit ut tortor pretium. Ultrices vitae auctor eu augue ut lectus. Tellus id interdum velit laoreet. Turpis massa sed elementum tempus egestas sed sed risus pretium. Id nibh tortor id aliquet lectus proin nibh. Aliquam vestibulum morbi blandit cursus risus at ultrices mi. Nulla malesuada pellentesque elit eget gravida cum sociis natoque. Proin nibh nisl condimentum id venenatis a condimentum.
+                </p>
+
+
+
+                
+                
+                
+            </div>
+
+        </div>
+
+        <div class="second">
+            <div class="secondcontent">
+                <h1 style="color: #242a36">Past Papers</h1>
+                <div style="height:3px; background-color:white;width: 100%;"></div>
+                <p style="text-align: justify;">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.(2015)</li>
+                    <li>Iaculis at erat pellentesque adipiscing commodo elit at. Aliquam etiam erat velit scelerisque in dictum.(2019)</li>
+                    <li>Turpis massa sed elementum tempus egestas sed sed risus pretium.(2021)</li>
+                    <li>Auctor neque vitae tempus quam pellentesque nec nam. Et ligula ullamcorper malesuada proin.(2020)</li>
+                    <li>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.(2016)</li>
+                    <li>Sit amet commodo nulla facilisi nullam vehicula ipsum. Erat velit scelerisque in dictum non consectetur a.(2022)</li>
+                    <li>Donec ac odio tempor orci. Aliquet bibendum enim facilisis gravida neque convallis a cras semper. Fringilla urna porttitor dolor purus.(2021)</li>
+                    <li>Tristique magna sit amet purus. Dolor sit amet consectetur adipiscing elit. Eu volutpat odio facilisis mauris sit amet massa.(2019)</li>
+                    <li>Enim neque volutpat ac tincidunt vitae semper. Suscipit tellus mauris a diam maecenas sed enim ut.(2018)</li>
+                    <li>Curabitur vitae nunc sed velit dignissim sodales ut. Leo duis ut diam quam nulla. Justo eget magna fermentum iaculis eu.(2020)</li>
+                    <li>Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius.(2020)</li>
+                </p>
+                
+                
+                
+
+            </div>
+        </div>
+        
+        
+        <footer>
+            
+                <h4 style="color:white">hopcon.</h4>
+                
+
+            
+        </footer>
+    </body>
+</html>

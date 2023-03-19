@@ -1,0 +1,918 @@
+
+
+
+
+
+<html>
+<head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48;
+          
+        }
+    </style>
+
+
+    <style>
+        .burger {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48
+
+        }
+
+        .symbol{
+            font-size: 40px;
+            color: #242a36;
+        }
+
+    </style>
+
+    <style>
+
+        
+
+        
+        body{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .page{
+            
+            width:100vw;
+            display:flex;
+            
+            
+        }
+
+        nav{
+            width:100vw;
+            height:10vh;
+            position: sticky;
+            top:0;
+            background-color: #242a36;
+
+            display:flex;
+            justify-content: space-between;
+            padding:0 0 0 2% ;
+            box-sizing: border-box;
+            align-items: center;
+            flex-direction: row;
+
+            z-index: 2;
+            
+        }
+
+        .burger{
+            display: none;
+        }
+
+        .navlinks{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .innerlinks{
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+        }
+        .innerlinks a{
+            
+            text-decoration: none;
+            color: white;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            padding: 0 30px 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .innerlinks a:hover{
+            background-color: #6de9e9;
+            color:#242a36;
+        }
+
+        .logo{
+            width:100%;
+            display: flex;
+            align-items: center;
+
+        }
+
+        footer{
+            width:100vw;
+            height:10vh;
+            background-color: #242a36;
+            margin: 0;
+            
+            display: flex;
+            align-items: center;
+
+            padding-left:3%;
+            box-sizing: border-box;
+            
+
+        }
+
+        .hero{
+            height: 100vh;
+            background-image: url("headerimg.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+           
+            
+        }
+
+        .name{
+            font-size: 7vw;
+            color: white;
+            font-family: 'Bebas Neue', cursive;
+
+        }
+
+        .first{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 10% 0 10% 0;
+            
+            
+        }
+
+
+        .firstcontent{
+            width: 70%;
+            flex-direction: column;
+            
+        }
+
+ 
+
+        .firstmain{
+            
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+        }
+
+        button[type="submit"],button[type="reset"]
+        {
+            background-color: #242a36;
+            color: #6de9e9;
+            border: none;
+            padding:5px;
+            width: 200px;
+            align-self: center;
+        }
+        button[type="submit"]:hover,button[type="reset"]:hover
+        {
+            color: #242a36;
+            background-color: #6de9e9;
+        }
+
+        
+
+            
+
+    
+
+        
+
+        @media screen and (max-width:1000px){
+
+            
+            
+            
+            
+            .page{
+                height: auto;
+                padding: 10% 0 10% 0;
+            }
+
+            .burger{
+            display: block;
+            color: white;
+            z-index: 3;
+            padding-right: 30px;
+        }
+
+    
+
+        .navlinks{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            width: auto;
+            
+        }
+
+        .innerlinks{
+            display: none;
+            position: absolute;
+            width: 50vw;
+            top:10vh;
+            right: 0;
+            background-color: #242a36;
+            
+        }
+
+        .innerlinks a{
+            color: white;
+            text-decoration: none;
+            display: flex;
+            background-color: #242a36
+            
+
+        }
+
+        .innerlinks a:hover{
+            background-color: #6de9e9;
+            color: #242a36;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navlinks:hover .innerlinks{
+            display: block;
+            background-color: #242a36;
+            
+        }
+
+    
+
+    
+        }
+
+
+        .qna{
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            width: 100%;
+        }
+        
+        .salutations{
+            display: flex;
+            gap:5px;
+        }
+
+        .formitems{
+
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap:20px;
+        }
+
+        input[type="text"],input[type="password"],input[type="email"],input[type="date"],input[name="uname"]{
+            border-bottom: 3px solid #6de9e9;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            width: 60%;
+        }
+
+        textarea,select{
+            width: 60%;
+            border: 3px solid #6de9e9;
+        }
+
+        fieldset{
+            padding: 30px;
+        }
+
+        .regform{
+            gap:30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .error{
+            font-size: 12px;
+            display: flex;
+            justify-content: right;
+            color:red;
+        }
+        #otherlang{
+            display:none;
+        }
+
+
+ 
+
+        
+
+
+
+        
+       
+     
+
+
+    </style>
+
+</head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" title="HOPCON logo">
+            </div>
+            
+            <div class="navlinks">
+                <span class="material-symbols-outlined burger">menu</span>
+                <div class="innerlinks">
+                    <a href="ex1.html" title="link to home">Home</a>
+                    <a href="comittee.html" title="link to committee">Committee</a>
+                    <a href="callpapers.html" title="link to papers">Papers</a>
+                    <a href="dates.html" title="links to dates">Dates</a>
+                    <a href="workshops.html" title="links to workshops">Workshops</a>
+                    <a href="register.html" title="link to register">Register</a>
+                    <a href="contact.html" title="link to contact">Contact</a>
+                    <a href="gallery.html" title="link to gallery">gallery</a>
+                </div>
+            </div>
+
+        </nav>
+        <div class="page hero">
+
+            
+            <h1 class="name"><b>
+                HOP CON <span style="color:#6de9e9">2023</span>
+            </b></h1>
+           
+            
+        </div>
+            
+
+        
+        <div class="page first">
+
+            <div class="firstcontent">
+                <h1 style="color:#242a36;">Register</h1>
+                <div style="height:3px; background-color:#6de9e9;width: 100%;"></div>
+                
+                <div class="firstmain">
+                    <p>Please fill up the form to register</p>
+
+                    <form  class="regform" autocomplete="on" method="get" target="_self" action="thankyou.html" >
+                        <fieldset>
+                            <legend>Personal Details</legend>
+                            <div class="formitems">
+                                <span id="salerror" class="error"></span>
+                                <div class="salutations">
+                                    <div>
+                                        <label for="Ms">Ms</label>
+                                        <input type="radio" id="Ms" name="sal" value="Ms">
+                                    </div>
+                                    <div>
+                                        <label for="Mr">Mr</label>
+                                        <input type="radio" id="Mr" name="sal" value="Mr">
+                                    </div>
+                                    <div>
+                                        <label for="Mrs">Mrs</label>
+                                        <input type="radio" id="Mrs" name="sal" value="Mrs">
+                                    </div>
+                                    <div>
+                                        <label for="Mx">Mx</label>
+                                        <input type="radio" id="Mx" name="sal" value="Mx">
+                                    </div>
+                                    <div>
+                                        <label for="Dr">Dr</label>
+                                        <input type="radio" id="Dr" name="sal" value="Dr">
+                                    </div>
+                                </div>
+                                
+                                <span id="nameerror" class="error"></span>
+                                <div class="qna">
+                                    <label for="namefl">Name</label>
+                                    <input type="text" id="namefl" name="name">
+                                </div>
+                                <span id="unameerror" class="error"></span>
+                                <div class="qna">
+                                    <label for="uname">Username</label>
+                                    <input type="text" list="unames" id="uname" name="uname">
+                                    <datalist id="unames">
+                                        <option value="icecream">
+                                    </datalist>
+                                </div>
+                                <span id="pwerror" class="error"></span>
+                                <div class="qna">
+                                    <label for="pword">Password</label>
+                                    <input type="password" id="pword" name="pword">
+                                </div>
+                                <span id="emailerror" class="error"></span>
+                                <div class="qna">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="mail" name="mail">
+                                </div>
+                                <span id="doberror" class="error"></span>
+                                <div class="qna">
+                                    <label for="dob">Date of birth</label>
+                                    <input type="date" id="dob" name="dob">
+                                </div>
+                                <span id="photoerror" class="error"></span>
+                                <div class="qna">
+                                    <img src="allimgs/blankimg.png" id="photoid" style="width: 84px;height: 108px;">
+                                    <div class="div" style="display: flex; flex-direction: column;width: 60%;gap:10px;">
+                                        <label for="photo">Upload photo</label>
+                                        <input type="file" id="photo" name="photo">
+                                    </div>  
+                                </div>
+
+                                
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Education and Experience</legend>
+                            <div class="formitems">
+                                <span id="langError" class="error"></span>
+                                <div class="languages">
+                                    <div>
+                                        <input type="checkbox" id="eng" name="langs" value="eng">
+                                        <label for="English">English</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="tam" name="langs" value="tam">
+                                        <label for="tam">Tamil</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="hin" name="langs" value="hin">
+                                        <label for="hin">Hindi</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="fren" name="langs" value="fren">
+                                        <label for="fren">French</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="others" name="langs" value="other">
+                                        <input type="text" id="otherlang" name="otherlang" >
+                                        <label for="others">other</label>
+                                    </div>
+                                </div>
+                                <span id="affError" class="error"></span>
+                                <div class="qna">
+                                    <label for="aff">Affiliation</label>
+                                    <input type="text" id="aff" name="aff">
+                                    
+                                </div>
+                                <span id="specError" class="error"></span>
+                                <div class="qna">
+                                    <label for="spec">Specialization</label>
+                                    <input type="text" id="spec" name="spec">
+                                </div>
+                                <span id="interestError" class="error"></span>
+                                <div class="qna">
+                                    <label for="interest">Interested fields</label>
+                                    <input type="text" id="interest" name="interest">
+                                </div>
+                                <span id="addexpError" class="error"></span>
+                                <div class="qna">
+                                    <label for="addexp">Additional expertise</label>
+                                    <textarea id="addexp" name="addexp"></textarea>
+                                </div>
+                                
+
+                                
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Event registration</legend>
+                            <div class="formitems">
+                                
+                                <div class="qna">
+                                    <label for="even">Event</label>
+                                    <select name="even" id="even" >
+                                        <option value="ws1">Mystery of Chemistry Workshop</option>
+                                        <option value="ws2">Working on Networking Workshop</option>
+                                        <option value="ws3">Artificial Unintelligence Workshop</option>
+                                        <option value="ws4">HOPCON '23 Summer Conference</option>
+                                    </select>
+                                    
+                                </div>
+                                <div class="qna">
+                                    <label for="sess">Session</label>
+                                    <select name="sess" id="sess" >
+                                        <option value="fn">Forenoon Session 8am-2pm</option>
+                                        <option value="evn">Evening Session 4pm-10pm</option>
+                                    </select>
+                                </div>
+                                <div class="qna">
+                                    <label for="purpose">Purpose</label>
+                                    <input type="text" id="purpose" name="purpose">
+                                </div>
+                                <div class="qna">
+                                    <label for="expectation">Expectation</label>
+                                    <input type="text" id="expectation" name="expectation">
+                                </div>
+                                
+                                
+
+                                
+                            </div>
+                        </fieldset>
+
+                        
+                        
+                        <button type="submit" > SUBMIT</button>
+                        <button type="reset"> RESET</button>
+                    </form>
+                    
+                </div>
+
+                
+
+                
+            </div>
+
+        </div>
+        
+        
+        
+        <footer>
+            
+            <h4 style="color:white">hopcon.</h4>
+
+            
+        </footer>
+
+        <script>
+
+const form = document.querySelector('form');
+const name = document.getElementById('namefl');
+const uname = document.getElementById('uname');
+const pword = document.getElementById('pword');
+const mail = document.getElementById('mail');
+const dob = document.getElementById('dob');
+const photo= document.getElementById('photo');
+const others= document.getElementById('others');
+const Checkboxes = document.querySelectorAll("[name='langs']");
+const radios = document.querySelectorAll("[name='sal']");
+const aff=document.getElementById('aff');
+const spec=document.getElementById('spec');
+const interest=document.getElementById('interest');
+const addexp=document.getElementById('addexp');
+
+
+const nameError = document.getElementById('nameerror');
+const unameError = document.getElementById('unameerror');
+const pwError = document.getElementById('pwerror');
+const mailError = document.getElementById('emailerror');
+const dobError = document.getElementById('doberror');
+const photoError= document.getElementById('photoerror');
+const langError=document.getElementById('langError');
+const salError=document.getElementById('salerror');
+const affError=document.getElementById('affError');
+const specError=document.getElementById('specError');
+const interestError=document.getElementById('interestError');
+const adexpError=document.getElementById('addexpError');
+
+let langcount=0;
+let salcount=0;
+
+Checkboxes.forEach(function(checkbox){
+    checkbox.addEventListener('change',function(event){
+       if (event.target.checked)
+         {langcount+=1;}
+       else{
+            langcount-=1;
+       }
+
+       if(langcount<2){
+        langError.textContent="Please select atleast 2 languages";
+       }
+       else{
+        langError.textContent="";
+       }
+    
+    })
+})
+
+radios.forEach(function(radio){
+    radio.addEventListener('change',function(event){
+       if (event.target.checked)
+         {salcount+=1;}
+
+    if(salcount>=1)
+    {
+        salError.textContent="";
+    }
+    
+    })
+})
+
+
+photo.addEventListener("change",function(event){
+    if(event.target.files.length>0)
+    {
+        document.getElementById('photoid').src=URL.createObjectURL(event.target.files[0]);
+        photoError.textContent = '';
+    }
+    else{
+        document.getElementById('photoid').src="allimgs/blankimg.png";
+        photoError.textContent = 'please upload a photo.';
+    }
+})
+
+
+
+others.addEventListener("click",function(event){
+
+    if(others.checked)
+    {
+        document.getElementById('otherlang').style.display="inline-block";
+    }
+    else{
+        document.getElementById('otherlang').style.display="none";
+    }
+})
+
+addexp.addEventListener("input",function(event){
+    if(event.target.value=="")
+    {
+        addexpError.textContent = 'Please fill in any additional expertise.';
+
+    }
+    else{
+        addexpError.textContent = '';
+    }
+});
+
+
+function valaddexp(){
+    let submitOK = true;
+    if (addexp.value.length === 0) {
+    addexpError.textContent = 'Please fill in any additional expertise.';
+    submitOK = false;
+    }
+    else {
+    addexpError.textContent = '';
+    }
+    return submitOK;
+
+}
+
+
+function valinterest(){
+    let submitOK = true;
+    if (interest.value.length === 0) {
+    interestError.textContent = 'Please fill in your interests.';
+    submitOK = false;
+    }
+    else {
+    interestError.textContent = '';
+    }
+    return submitOK;
+
+}
+
+
+
+function valspec(){
+    let submitOK = true;
+    if (spec.value.length === 0) {
+    specError.textContent = 'Please fill in your specialization.';
+    submitOK = false;
+    }
+    else {
+    specError.textContent = '';
+    }
+    return submitOK;
+
+}
+
+
+function valaff(){
+    let submitOK = true;
+    if (aff.value.length === 0) {
+    affError.textContent = 'Please fill in your affiliation.';
+    submitOK = false;
+    }
+    else {
+    affError.textContent = '';
+    }
+    return submitOK;
+
+}
+
+function valname()
+{
+    let submitOK = true;
+
+    if (name.value.length === 0) {
+    nameError.textContent = 'Please fill in your name.';
+    submitOK = false;
+  } else if (!/^\w+( \w+)?$/.test(name.value)) {
+    nameError.textContent = 'Please give in format "firstname lastname"';
+    submitOK = false;
+  } else {
+    nameError.textContent = '';
+  }
+
+  return submitOK;
+
+
+}
+
+function valusername(){
+
+    let submitOK = true;
+
+    if (uname.value.length === 0) {
+    unameError.textContent = 'Please fill in your user name.';
+    submitOK = false;
+  } else if (!/^[a-zA-Z]+$/.test(uname.value)) {
+    unameError.textContent = 'Username should contain only alphabets.';
+    submitOK = false;
+  } else {
+    unameError.textContent = '';
+  }
+
+  return submitOK;
+}
+
+
+function valpassword(){
+
+    let submitOK = true;
+
+    if (!/^.{8,}$/.test(pword.value) || !/^.*[A-Z].*$/.test(pword.value) || !/^.*[a-z].*$/.test(pword.value) || !/^.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?].*$/.test(pword.value) || !/^.*[0-9].*$/.test(pword.value)) {
+    pwError.textContent = 'Password must be 8 characters long and must have at least 1 lowercase alphabet, uppercase alphabet, digit, and special character.';
+    submitOK = false;
+  } else {
+    pwError.textContent = '';
+  }
+
+  return submitOK;
+}
+
+function valmail(){
+    let submitOK = true;
+    if (mail.value.length === 0 || (!/^[^ @]+@[^ @]+\.(com|org|net)$/.test(mail.value) && !/^[^ @]+@[^ @]+\.[^ @]+\.[^ @]+$/.test(mail.value))) {
+    mailError.textContent = 'Format: xxxx@some.com, xxx.yyy@some.org, xxx@some1.some2.net.';
+    submitOK = false;
+  } else {
+    mailError.textContent = '';
+  }
+  return submitOK;
+}
+
+function valdob(){
+    let submitOK = true;
+
+    const dateOfBirth = new Date(dob.value);
+    const age= Math.floor((new Date() - dateOfBirth) / (365 * 24 * 60 * 60 * 1000));
+    if (isNaN(dateOfBirth.getTime())) {
+    dobError.textContent = 'Please enter your date of birth.';
+    submitOK = false;
+    } 
+  else if (age < 18) {
+    dobError.textContent = 'You must be at least 18 years old.';
+    submitOK = false;
+  } 
+  else if (age > 35) {
+    dobError.textContent = 'You must be below 35 years of age.';
+    submitOK = false;
+  }
+  else {
+    dobError.textContent = '';
+  }
+  return submitOK;
+
+
+}
+
+
+function valphoto() {
+  let submitOK = true;
+
+  if (photo.value.length == 0) {
+    photoError.textContent = 'Please upload a photo.';
+    submitOK = false;
+  } else {
+    photoError.textContent = '';
+  }
+
+  return submitOK;
+}
+
+form.addEventListener('submit', function (event) {
+  
+    let submitOK = false;
+
+    if(salcount>0)
+    {
+    name.focus();
+    if(valname())
+    {
+        uname.focus()
+        if(valusername())
+        {
+            pword.focus();
+            if(valpassword())
+            {
+                mail.focus();
+                if(valmail())
+                {
+                    dob.focus();
+                    if(valdob())
+                    {
+                        photo.focus();
+                        if(valphoto())
+                        {
+                            
+                            if(langcount>=2)
+                            {
+                                aff.focus();
+                                if(valaff())
+                                {
+                                    spec.focus();
+                                    {
+                                        if(valspec())
+                                        {
+                                            interest.focus();
+                                            if(valinterest())
+                                            {
+                                                addexp.focus();
+                                                if(valaddexp())
+                                                {
+                                                    return true;
+                                                }
+                                                
+                                            }
+                                            
+                                        }
+                                    }
+                                
+                                }
+                            }
+                            else{
+                                langError.textContent="Please select atleast 2 languages";
+                            }
+                            
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+else{
+    salError.textContent="Please select a salutation";
+}
+
+
+  if (!submitOK) {
+    event.preventDefault();
+  }
+});
+
+
+
+
+            
+            
+            
+        </script>
+    </body>
+</html>
